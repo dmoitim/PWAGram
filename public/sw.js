@@ -13,4 +13,4 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     console.log('[ServiceWorker]: fetching...', event);
     event.respondWith(fetch(event.request));
-})
+});
